@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<nav>
+  <h2>All Articles</h2>
+  <ul>
+    {% for help_article in site.help_articles %}
+      <a href=" {{ help_article.url }}">{{help_article.title}}</a>
+    {% endfor %}
+  </ul>
+</nav>
+
+{{ content }}

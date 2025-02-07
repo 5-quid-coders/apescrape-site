@@ -5,7 +5,7 @@ layout: default
 <nav>
   <h2>All Articles</h2>
   <ul>
-    {% for help_article in site.help_articles %}
+    {% for help_article in site.help %}
       <a href=" {{ help_article.url }}">{{help_article.title}}</a>
     {% endfor %}
   </ul>

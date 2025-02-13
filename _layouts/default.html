@@ -1,15 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
-
     {%- include head.html -%}
 
-    <body>
+    <body class="flex flex-col min-h-screen">
         {%- include navbar.html -%}
-        <div id="pageContent">
-            {{ content }}
-        </div>
+        <div id="pageContent" class="flex-grow">{{ content }}</div>
         {%- include footer.html -%}
     </body>
-
 </html>

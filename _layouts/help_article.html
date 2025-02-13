@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="flex">
-  <div class="flex-initial">
-    <ul class="menu bg-base-200 p-4 h-screen">
+  <div class="shrink">
+    <ul class="menu bg-base-200 p-4 h-screen sticky top-16">
       <li class="menu-title">Articles</li>
       {% for help_article in site.help %}
         <li><a href=" {{ help_article.url }}">{{help_article.title}}</a></li>
@@ -12,12 +12,8 @@ layout: default
     </l>
   </div>
 
-  <div class="flex-auto prose p-16">
+  <div class="grow prose max-w-full p-16">
     {{ content }}
   </div>
 
 </div>
-
-
-
-

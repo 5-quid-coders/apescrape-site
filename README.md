@@ -5,7 +5,8 @@
 3. Run `npm i` to install necessary tailwind dependencies (only necessary if you are messing with the css)
 4. Run `bundle exec jekyll serve --livereload` to test
 
-# To Recompile The CSS
+# If You Need to Change the Styling
+If you are messing with any CSS classes, in another tab run
 ```
-$ npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/tailwind.css
+$ npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch
 ```

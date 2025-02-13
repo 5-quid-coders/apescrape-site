@@ -2,13 +2,22 @@
 layout: default
 ---
 
-<nav>
-  <h2>All Articles</h2>
-  <ul>
-    {% for help_article in site.help %}
-      <a href=" {{ help_article.url }}">{{help_article.title}}</a>
-    {% endfor %}
-  </ul>
-</nav>
+<div class="flex">
+  <div class="flex-initial">
+    <ul class="menu bg-base-200 p-4 h-screen">
+      <li class="menu-title">Articles</li>
+      {% for help_article in site.help %}
+        <li><a href=" {{ help_article.url }}">{{help_article.title}}</a></li>
+      {% endfor %}
+    </l>
+  </div>
 
-{{ content }}
+  <div class="flex-auto prose p-16">
+    {{ content }}
+  </div>
+
+</div>
+
+
+
+

@@ -7,5 +7,5 @@
 
 # To Recompile The CSS
 ```
-$ npx @tailwindcss/cli -i ./assets/css/main.css -o ./src/tailwind.css
+$ npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/tailwind.css
 ```

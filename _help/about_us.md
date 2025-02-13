@@ -1,3 +1,9 @@
+---
+title: About Us
+layout: help_article
+---
+
+
 # ApeScrape
 
 **ApeScrape is an AI-powered data collection tool designed to make web data work for you!**  

@@ -1,3 +1,8 @@
+---
+title: Why ApeScrape?
+layout: help_article
+---
+
 # Why Choose ApeScrape?  
 
 **ApeScrape** makes web data collection a breeze by transforming unstructured information into **structured, easy-to-use spreadsheets**—formatted exactly to your specifications.  
@@ -18,3 +23,5 @@ Download your data in **CSV, XLSX, and other popular formats**, making it easy t
 No need to wait around while ApeScrape works! You can **focus on other tasks**, and once your data is ready, you'll receive a **confirmation email** so you can download it instantly.  
 
 Let **ApeScrape** do the heavy lifting—so you can **analyze, strategize, and grow with confidence.**  
+
+blockchain

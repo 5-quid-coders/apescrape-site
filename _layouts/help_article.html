@@ -2,18 +2,35 @@
 layout: default
 ---
 
-<div class="flex">
-  <div class="shrink">
-    <ul class="menu bg-base-200 p-4 h-screen sticky top-16">
-      <li class="menu-title">Articles</li>
+<!-- <div class="drawer drawer-open">
+  <div class="drawer-content flex flex-col items-center justify-center">
+
+  </div>
+  <div class="drawer-side">
+    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+
+    </ul>
+  </div>
+</div> -->
+
+<div class="drawer drawer-open">
+  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <div class="prose p-16">
+      {{ content }}
+    </div>
+    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">
+      Open drawer
+    </label>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
       {% for help_article in site.help %}
         <li><a href=" {{ help_article.url }}">{{help_article.title}}</a></li>
       {% endfor %}
-    </l>
+    </ul>
   </div>
-
-  <div class="grow prose max-w-full p-16">
-    {{ content }}
-  </div>
-
 </div>
+
+

@@ -1796,6 +1796,12 @@
     min-height: 3.75rem;
     transition: background-color 0.2s ease-out;
   }
+  .drawer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-auto-columns: max-content auto;
+  }
   .absolute {
     position: absolute;
   }
@@ -1813,9 +1819,6 @@
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
-  }
-  .top-16 {
-    top: calc(var(--spacing) * 16);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -2740,11 +2743,17 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-screen {
-    height: 100vh;
+  .max-h-full {
+    max-height: 100%;
+  }
+  .min-h-full {
+    min-height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
   }
   .w-screen {
     width: 100vw;
@@ -2769,9 +2778,6 @@
   }
   .flex-shrink-0 {
     flex-shrink: 0;
-  }
-  .shrink {
-    flex-shrink: 1;
   }
   .flex-grow {
     flex-grow: 1;
@@ -3055,6 +3061,9 @@
   .break-all {
     word-break: break-all;
   }
+  .text-base-content {
+    color: var(--color-base-content);
+  }
   .text-inherit {
     color: inherit;
   }
@@ -3158,6 +3167,44 @@
       --tw-prose-th-borders: color-mix(in oklab, var(--color-base-content) 50%, #0000);
       --tw-prose-td-borders: color-mix(in oklab, var(--color-base-content) 20%, #0000);
       --tw-prose-kbd: color-mix(in oklab, var(--color-base-content) 80%, #0000);
+    }
+  }
+  .lg\:drawer-open {
+    @media (width >= 64rem) {
+      > .drawer-side {
+        overflow-y: auto;
+      }
+      > .drawer-toggle {
+        display: none;
+        & ~ .drawer-side {
+          pointer-events: auto;
+          visibility: visible;
+          position: sticky;
+          display: block;
+          width: auto;
+          overscroll-behavior: auto;
+          opacity: 100%;
+          & > .drawer-overlay {
+            cursor: default;
+            background-color: transparent;
+          }
+          & > *:not(.drawer-overlay) {
+            translate: 0%;
+            [dir="rtl"] & {
+              translate: 0%;
+            }
+          }
+        }
+        &:checked ~ .drawer-side {
+          pointer-events: auto;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
 }

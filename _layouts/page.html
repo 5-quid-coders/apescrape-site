@@ -1,0 +1,11 @@
+<!doctype html>
+
+<html>
+    {%- include head.html -%}
+
+    <body class="flex flex-col min-h-screen" data-theme="cymk">
+        {%- include navbar.html -%}
+        <div id="pageContent" class="flex-grow prose p-16">{{ content }}</div>
+        {%- include footer.html -%}
+    </body>
+</html>

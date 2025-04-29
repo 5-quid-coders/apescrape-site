@@ -1,9 +1,9 @@
 ---
-title: Datasources
+title: 2. Datasources
 layout: help_article
 ---
 
-## 2. Datasources
+## Datasources
 
 Datasources store domains you would like your workflow to target.
 

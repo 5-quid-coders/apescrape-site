@@ -1,5 +1,5 @@
 ---
-title: Criteria
+title: Workflows
 layout: help_article
 ---
 

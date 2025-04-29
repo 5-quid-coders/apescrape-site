@@ -3,7 +3,7 @@ title: Criteria
 layout: help_article
 ---
 
-## Criteria
+## 1. Criteria
 
 Apescrape lets you target webpages based on their content, and search those pages for specific information. This is what we call 'Criteria'.
 

@@ -14,7 +14,16 @@ title: Structuring the internet one page at a time.
 
           <a class="btn btn-primary" href="https://dashboard.apescrape.com">Start Now</a>
 
-          <img class="mt-8 opacity-1" src="/assets/Photo_from_2025-04-30_21-55-37.671153.jpeg" width="500px" height="auto />
+          <img id="the_lion" style="opacity: 0.0" class="mt-8" src="/assets/Photo_from_2025-04-30_21-55-37.671153.jpeg" width="500px" height="auto" />
+
+          <script>
+            let addOpacity = () => {
+              document.getElementById("the_lion").style.opacity = parseFloat(document.getElementById("the_lion").style.opacity) + 0.01;
+              setTimeout(addOpacity, 36000);
+            }
+            
+            setTimeout(addOpacity, 10000);
+          </script>
 
       </div>
   </div>

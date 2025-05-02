@@ -4,8 +4,12 @@
     {%- include head.html -%}
 
     <body class="flex flex-col min-h-screen" data-theme="cymk">
-        {%- include navbar.html -%}
+        {% include navbar.html show_menu_button=page.show_menu_button %}
         <div id="pageContent" class="flex-grow">{{ content }}</div>
-        {%- include footer.html -%}
+        {% include footer.html %}
+
+        <!-- <div class="invisible max-sm:visible w-screen h-screen fixed z-100 bg-base-100">
+          <h1 class="text-4xl p-16">This content is not available on small screens</h1>
+        </div> -->
     </body>
 </html>

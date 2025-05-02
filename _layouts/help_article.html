@@ -21,9 +21,9 @@ show_menu_button: true
       {{ content }}
     </div>
   </div>
-  <div class="drawer-side z-9 pt-16 bg-base-100">
-    <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-    <ul class="menu border-r border-r-base-300 text-base-content min-h-full w-80 p-4">
+  <div class="drawer-side mt-0 max-lg:mt-16 bg-base-100 top-0 min-lg:top-16">
+    <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay z-8"></label>
+    <ul class="menu border-r bg-base-100 border-r-base-300 text-base-content min-h-full w-80 p-4 z-9">
       {% for help_article in site.help %}
         <li><a href=" {{ help_article.url }}">{{help_article.title}}</a></li>
       {% endfor %}

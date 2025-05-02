@@ -20,17 +20,29 @@ Otherwise:
 
 1. Input a name for your criteria in the 'Criteria Name' box
 
+```
 Gif of user typing name 
+```
 
 2. Input field name into the box labeled 'field name'. This will be the name of a column of data that is collected.
 
+```
 Gif of user writing name into box
+```
 
 3. Input a description into the box labeled 'description'. This should be a detailed description of exactly what data you want to be collected. For more information on how to write a good description, see [this helpful guide!](./3criteria.md).
 
+```
 Gif of writing description
+```
 
-4. Press the add button on the right
+4. If this field of data should always be unique, click the box labelled 'unique identifier'
+
+```
+gif
+```
+
+5. Press the add button on the right
 
 Gif of add button
 

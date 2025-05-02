@@ -1,7 +1,12 @@
 <div class="navbar bg-base-100 border-b border-b-base-300 sticky top-0 z-10">
-    <label for="my-drawer-2" class="btn btn-ghost drawer-button lg:hidden">
+    <label id="navbar-button" for="my-drawer-2" class="btn btn-ghost drawer-button lg:hidden">
       <i class="bi bi-list text-xl"></i>
     </label>
+    <script>
+      if(window.location.pathname == "/"){
+        document.getElementById("navbar-button").style.display="none";
+      }
+    </script>
     <div class="flex-1">
         <a class="btn btn-ghost text-xl" href="/"
             ><img

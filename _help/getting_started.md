@@ -56,7 +56,7 @@ Otherwise:
 
 3. Input the domain from which data should be collected. You should only put the root domain, e.g., www.abdn.ac.uk rather than www.abdn.ac.uk/study/undergraduate/degree-programmes/527/G400/computing-science/. 
 
-Gif, you know how it goes
+    Gif, you know how it goes
 
 4. Press the add button on the right
 

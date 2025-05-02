@@ -20,19 +20,23 @@ Otherwise:
 
 1. Input a name for your criteria in the 'Criteria Name' box
 
-Gif of user typing name 
+    Gif of user typing name 
 
 2. Input field name into the box labeled 'field name'. This will be the name of a column of data that is collected.
 
-Gif of user writing name into box
+    Gif of user writing name into box
 
 3. Input a description into the box labeled 'description'. This should be a detailed description of exactly what data you want to be collected. For more information on how to write a good description, see [this helpful guide!](./3criteria.md).
 
-Gif of writing description
+    Gif of writing description
 
-4. Press the add button on the right
+4. If this field of data should always be unique, click the box labelled 'unique identifier'
 
-Gif of add button
+    gif
+
+5. Press the add button on the right
+
+    Gif of add button
 
 You can repeat these steps to add as many fields as you want
 
@@ -44,19 +48,19 @@ Insert gif of changing the datasource
 Otherwise:
 1. Input a name for your datasource in the 'Datasource Name' box. This is the name of the set of datasources, and can be used to select this combination of datasources for a different workflow.
 
-Gif of inputting name
+    Gif of inputting name
 
 2. Input the name of the website from which you want to collect data, for example 'Aberdeen University' if you are collecting data from the University of Aberdeen website.
 
-Gif of naming this
+    Gif of naming this
 
 3. Input the domain from which data should be collected. You should only put the root domain, e.g., www.abdn.ac.uk rather than www.abdn.ac.uk/study/undergraduate/degree-programmes/527/G400/computing-science/. 
 
-Gif, you know how it goes
+    Gif, you know how it goes
 
 4. Press the add button on the right
 
-gif :o
+    gif :o
 
 You can repeat this as many times as is necessary
 

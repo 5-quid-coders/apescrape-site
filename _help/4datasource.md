@@ -12,3 +12,7 @@ Datasources store a collection of website Uniform Resource Locators (URLs) and n
 **You don't need to include the URL of every page you want to scrape**, Apescrape will find those automatically.
 
 You're free to use the same datasource for multiple workflows, even if they use different criteria.
+
+You can also add datasources by importing a CSV file containing all the websites you want to collect data from! The button is shown in the image below:
+
+![Image showing the exact location of the import CSV button](/assets/import_csv_button.png)

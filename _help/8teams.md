@@ -29,7 +29,7 @@ To do this, go to the ['Teams page'](https://dashboard.apescrape.com/teams/) and
 
 At the top left of this page, there is an input box with a button next to it labelled 'Invite'. Type the Email Address of the person you wish to invite, then click 'Invite' and an Email will be sent to this person inviting them to join your Team.
 
-# Remove Team Members
+## Remove Team Members
 If you wish to **remove a member from a Team**, go to the ['Teams page'](https://dashboard.apescrape.com/teams/) and press the 'Select' button next to the Team you wish to remove a member from. 
 
 On this page, find the Email Address of the person you wish to remove, and click the button labelled 'Remove' to the right of this persons Email.

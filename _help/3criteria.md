@@ -14,13 +14,11 @@ A Criteria has two parts:
 - **Page Validators**
 - **Fields**
 
----
 
 ## Page Validators
 
 The **Page Validator** is an English description that tells your Workflow whether a page it encounters is relevant to your search.
 
----
 
 ## Fields
 
@@ -34,7 +32,6 @@ The **Description** is a simple one-sentence English explanation of what data yo
 > **Helpful Tip**  
 > When creating your Fields, think of a spreadsheet containing the data output. The **Name** part of the Field will be the column header, and the **Description** will be the type of data that would populate that column.
 
----
 
 ## Now Let's Put It All Together
 
@@ -47,18 +44,10 @@ Looking for information about **restaurants in Edinburgh** from a set of tourist
 > Now let’s say you are looking for the names of the restaurant and their descriptions:
 
 ### Fields:
+| Name:            | Restaurant name   | Description:       | What is this restaurant called?                    |
+|------------------|-------------------|--------------------|----------------------------------------------------|
+| Name:            | Restaurant type   | Description:       | What is a one-sentence summary of this restaurant? |
 
-- **Name:**  
-  Restaurant name  
-  **Description:**  
-  What is this restaurant called?
-
-- **Name:**  
-  Restaurant type  
-  **Description:**  
-  What is a one-sentence summary of this restaurant?
-
----
 
 ## How to Make the Most of Your Criteria
 

@@ -44,9 +44,16 @@ Looking for information about **restaurants in Edinburgh** from a set of tourist
 > Now let’s say you are looking for the names of the restaurant and their descriptions:
 
 ### Fields:
-| Name:            | Restaurant name   | Description:       | What is this restaurant called?                    |
-|------------------|-------------------|--------------------|----------------------------------------------------|
-| Name:            | Restaurant type   | Description:       | What is a one-sentence summary of this restaurant? |
+
+- **Name:**  
+  Restaurant name  
+  **Description:**  
+  What is this restaurant called?
+
+- **Name:**  
+  Restaurant type  
+  **Description:**  
+  What is a one-sentence summary of this restaurant?
 
 
 ## How to Make the Most of Your Criteria

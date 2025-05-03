@@ -14,7 +14,7 @@ A Team is formed of two roles:
 - **Member**: A member cannot change the roles of other members of a Team
 
 ## Create a New Team
-To **create a new Team**, navigate to the 'Teams' page. This can be done by clicking the 'Teams' button on the sidebar or by clicking on [this link/](https://dashboard.apescrape.com/teams/)
+To **create a new Team**, navigate to the 'Teams' page. This can be done by clicking the 'Teams' button on the sidebar or by clicking on [this link](https://dashboard.apescrape.com/teams/)
 
 Next click the button labelled 'New Team' and input a name for your new Team.
 

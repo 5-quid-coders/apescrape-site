@@ -4,11 +4,9 @@ layout: help_article
 ---
 
 # Datasources
-
 The **Datasource** is the second component of your **Workflow**. This is where you can list all the websites that you want to collect data from.
 
 For each website you want to include, simply fill in the **Name** field with the name of the website and the **URL** field with the website address.
-
 
 ## Scenario:
 Looking for information about **restaurants in Edinburgh** from a set of tourist websites.

@@ -28,7 +28,7 @@ Otherwise:
 
     Gif of user writing name into box
 
-3. Input a description into the box labeled 'description'. This should be a detailed description of exactly what data you want to be collected. For more information on how to write a good description, see [this helpful guide!](./3criteria.md).
+3. Input a description into the box labeled 'description'. This should be a detailed description of exactly what data you want to be collected. For more information on how to write a good description, see [this helpful guide!](./2criteria).
 
     Gif of writing description
 

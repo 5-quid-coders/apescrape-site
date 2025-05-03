@@ -4,4 +4,4 @@ url: /help
 ---
 
 # Help
-Welcome to the ApeScrape help centre. You can find a list of articles on the left.
+Welcome to the ApeScrape Help Centre! You can find a list of articles on the left showing you how best to make use of our features!

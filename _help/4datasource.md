@@ -3,16 +3,45 @@ title: 2. Datasources
 layout: help_article
 ---
 
-## Datasources
+# Datasources
 
-Datasources store domains you would like your workflow to target.
+The **Datasource** is the second component of your **Workflow**. This is where you can list all the websites that you want to collect data from.
 
-Datasources store a collection of website Uniform Resource Locators (URLs) and names, you can add as many as you need. Normally you will want to create a workflow that stores a collection of websites within a theme, such as websites belonging to restaurants in Edinburgh.
+For each website you want to include, simply fill in the **Name** field with the name of the website and the **URL** field with the website address.
 
-**You don't need to include the URL of every page you want to scrape**, Apescrape will find those automatically.
 
-You're free to use the same datasource for multiple workflows, even if they use different criteria.
+## Scenario:
+Looking for information about **restaurants in Edinburgh** from a set of tourist websites.
 
-You can also add datasources by importing a CSV file containing all the websites you want to collect data from! The button is shown in the image below:
+### Datasources:
+| Name:             | Food in Edinburg                          |
+|-------------------|--------------------------------------------|
+| URL:              | https://www.foodinedinburg.com             |
+
+| Name:             | Foodie Traveller                          |
+|-------------------|--------------------------------------------|
+| URL:              | https://www.foodietraveller.com/edinburg   |
+
+| Name:             | Food4Fun                                  |
+|-------------------|--------------------------------------------|
+| URL:              | https://www.food4fun.com                   |
+
+
+
+## When to Use Specific Page URLs vs Root URLs?
+
+- **Specific page URLs** should be used if you only want information from a few individual pages on a website.
+- **Root URLs** should be used if you want the Workflow to find **all relevant pages** within a website that contain the information you're looking for.
+
+> **Helpful Tip**  
+> The root URL of a website starts with `https://` and includes everything before the next `/`.  
+> For example, ApeScrape’s root URL is:  
+> `https://apescrape.com/`
+
+
+To quickly add Datasources through **CSV import**, choose the **Import** button located on the Datasource Creation Screen.
 
 ![Image showing the exact location of the import CSV button](/assets/import_csv_button.png)
+
+> **Helpful Tip**  
+> Once your Datasource is created, you can select it again when making new Workflows to get up and running even quicker—perfect if you're collecting from the same websites repeatedly.

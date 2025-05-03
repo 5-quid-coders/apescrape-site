@@ -14,18 +14,21 @@ For each website you want to include, simply fill in the **Name** field with the
 Looking for information about **restaurants in Edinburgh** from a set of tourist websites.
 
 ### Datasources:
-| Name:             | Food in Edinburg                          |
-|-------------------|--------------------------------------------|
-| URL:              | https://www.foodinedinburg.com             |
 
-| Name:             | Foodie Traveller                          |
-|-------------------|--------------------------------------------|
-| URL:              | https://www.foodietraveller.com/edinburg   |
+- **Name:**  
+  Food in Edinburg
+  **URL:**  
+  https://www.foodinedinburg.com
 
-| Name:             | Food4Fun                                  |
-|-------------------|--------------------------------------------|
-| URL:              | https://www.food4fun.com                   |
+- **Name:**  
+  Foodie Traveller   
+  **URL:**  
+  What is a one-sentence summary of this restaurant?
 
+- **Name:**  
+  Food4Fun   
+  **URL:**  
+  https://www.food4fun.com
 
 
 ## When to Use Specific Page URLs vs Root URLs?

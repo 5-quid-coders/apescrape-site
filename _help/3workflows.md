@@ -12,4 +12,4 @@ Workflows can be run as many times as you like to ensure you always have up to d
 
 Workflows can also be edited to allow you to change your mind after setup.
 
-Finally, data collected during a Workflow can be exported as an Excel (.xslx) file, allowing you to analyse your data in the most comfortable way for you. More information on Exporting is available [here.](./7exporting.md)
+Finally, data collected during a Workflow can be exported as an Excel (.xlsx) file, allowing you to analyse your data in the most comfortable way for you. More information on Exporting is available [here.](./7exporting.md)

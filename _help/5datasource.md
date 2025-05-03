@@ -1,5 +1,5 @@
 ---
-title: 2. Datasources
+title: 3. Datasources
 layout: help_article
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: 1. Criteria
+title: 2. Criteria
 layout: help_article
 ---
 
 # Criteria
 
-The **Criteria** is one of the components that make up a scraping **Workflow**. By specifying Criteria, you can indicate the exact data you want collected.
+The '***Criteria***' is one of the components that make up a scraping **Workflow**. By specifying Criteria, you can indicate the exact data you want collected.
 
 Let's get started!
 
@@ -22,10 +22,7 @@ The **Page Validator** is an English description that tells your Workflow whethe
 
 ## Fields
 
-Each **Field** of a Criteria describes the specific type of information you want to extract from web pages. It consists of:
-
-- **Name**
-- **Description**
+Each **Field** of a Criteria describes the specific type of information you want to extract from web pages. It consists of a **Name** and **Description**. The Description is just a simple one-sentence English explanation of what your workflow should search for. 
 
 The **Description** is a simple one-sentence English explanation of what data your Workflow should search for.
 

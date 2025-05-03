@@ -4,10 +4,12 @@ layout: help_article
 ---
 
 # Workflows
-Workflows represent your web scraping set up, consisting of two key components: **Criteria** and **Data Sources**. 
+Workflows represent your web scraping set up, consisting of two key components: [**Criteria**](./4criteria.md) and [**Data Sources**](./5datasource.md). 
 
-**Criteria** indicate the type of data you want collected and **Data Sources** are a stored list of all the URLs of the websites you want to collect from. 
+**Criteria** indicate the type of data you want to collect and **Data Sources** are a list of all the websites you want to collect data from. 
 
-Workflows can be re-run and paused to make sure the data you need is ready when you are.You can also see all the times that your workflows were run each run’s resulting data, making trend analysis a breeze. 
+Workflows can be run as many times as you like to ensure you always have up to date information, and can also be paused to ensure data is only collected when **you** want it to. You can also view the time that each Workflow run was started, so you know **when** your data was collected. 
 
-Workflow settings allow you to control how long each Workflow’s data is stored, keeping your workspace clean and current. Each Workflow’s data is exportable to various spreadsheet formats including Microsoft Excel, LibreOffice and CSV — making the Workflows seamlessly fit into your daily… workflow!
+Workflows can also be edited to allow you to change your mind after setup.
+
+Finally, data collected during a Workflow can be exported as an Excel (.xslx) file, allowing you to analyse your data in the most comfortable way for you. More information on Exporting is available [here.](./7exporting.md)

@@ -3,7 +3,7 @@ title: 1. Workflows
 layout: help_article
 ---
 
-## Workflows
+# Workflows
 Workflows represent your web scraping set up, consisting of two key components: **Criteria** and **Data Sources**. 
 
 **Criteria** indicate the type of data you want collected and **Data Sources** are a stored list of all the URLs of the websites you want to collect from. 

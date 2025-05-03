@@ -3,6 +3,8 @@ title: 4. Collecting Your First Data
 layout: help_article
 ---
 
+# Collecting Your First Data
+
 ## Step 1: Click the 'Create Workflow' Button
 insert gif of a user clicking the create worfklow button
 

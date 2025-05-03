@@ -13,4 +13,6 @@ From here, press the button labeled **'Export Data'**, and click **'New Export'*
 
 From here, an Excel file will begin compiling with your collected data. This may take some time depending on the amount of data you have collected. But don't worry, ApeScrape will send you a handy email when your data is ready to download!
 
-From here, just press the Export button again, and this time click on the specific Export you want to download.
+Just press the Export button again, and this time click on the specific Export you want to download.
+
+Congratulations, you now have your data in an Excel file!

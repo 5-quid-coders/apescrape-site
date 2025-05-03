@@ -3,20 +3,71 @@ title: 1. Criteria
 layout: help_article
 ---
 
-## Criteria
+# Criteria
 
-Apescrape lets you target webpages based on their content, and search those pages for specific information. This is what we call 'Criteria'.
+The **Criteria** is one of the components that make up a scraping **Workflow**. By specifying Criteria, you can indicate the exact data you want collected.
 
-A Criteria has two parts, 'Page Validators' and 'Fields'. The Page Validator is an english description of what qualifies a page as valuable to your search, an example of such a description could be:
+Let's get started!
 
-`Pages containing information regarding restaurants in Edinburgh`
+A Criteria has two parts:
 
-The Fields of a Criteria describes the specific categories of information you want to extract from webpages, each field has a name and an English description of what sort of data to look for, such as these:
+- **Page Validators**
+- **Fields**
 
-Name: `Restaurant Name`
-Description: `What is this restaurant called?`
+---
 
-Name: `Restaurant Type`
-Description: `What type of restaurant is this?`
+## Page Validators
 
-You can also classify a Field as being unique per record, which allows information from multiple pages to be combined based on a common factor. In the previous example, you would mark the restaurant name as being unique so that information about the same restaurant from different sites can be combined.
+The **Page Validator** is an English description that tells your Workflow whether a page it encounters is relevant to your search.
+
+---
+
+## Fields
+
+Each **Field** of a Criteria describes the specific type of information you want to extract from web pages. It consists of:
+
+- **Name**
+- **Description**
+
+The **Description** is a simple one-sentence English explanation of what data your Workflow should search for.
+
+> **Helpful Tip**  
+> When creating your Fields, think of a spreadsheet containing the data output. The **Name** part of the Field will be the column header, and the **Description** will be the type of data that would populate that column.
+
+---
+
+## Now Let's Put It All Together
+
+### Scenario:
+Looking for information about **restaurants in Edinburgh** from a set of tourist websites.
+
+### Page Validator:
+**Restaurant in Edinburgh**
+
+> Now let’s say you are looking for the names of the restaurant and their descriptions:
+
+### Fields:
+
+- **Name:**  
+  Restaurant name  
+  **Description:**  
+  What is this restaurant called?
+
+- **Name:**  
+  Restaurant type  
+  **Description:**  
+  What is a one-sentence summary of this restaurant?
+
+---
+
+## How to Make the Most of Your Criteria
+
+- Be **specific** in the Field Descriptions to avoid confusion between similar data points.
+- It is best practice to look at some of the websites you want to collect data from to get familiar with how to best phrase your Descriptions.
+- Use the **Unique** indicator on Field items to ensure each value collected is distinct.
+
+  > **Example:**  
+  > In our restaurant example, you may want to set the **‘Restaurant name’** field as *Unique* so that if your Workflow finds the same restaurant on multiple web pages, it merges them into a single data point instead of duplicating them.
+
+> **Helpful Tip**  
+> Once your Criteria is created, you can reuse it when making new Workflows. This saves time if you want to collect the same types of information from different websites.

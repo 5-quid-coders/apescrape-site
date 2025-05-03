@@ -4,9 +4,10 @@ layout: help_article
 ---
 
 ## Workflows
+Workflows represent your web scraping set up, consisting of two key components: Criteria and Datasources. 
 
-Workflows represent your webscraping setups, they store combinations of Criteria and Datasources. From here you can see all of the times that webscraping process was run and see the results it produced. 
+Criteria indicate the type of data you want collected and Datasources are a stored list of all the URLs of the websites you want to collect from. 
 
-You can control how long previous workflow 'runs' are kept by specifying a data retention period. 
+Workflows can be re-run and paused to make sure the data you need is ready when you are.You can also see all the times that your workflows were run each run’s resulting data, making trend analysis a breeze. 
 
-You can download workflow results to store them outside of apescrape.
+Workflow settings allow you to control how long each Workflow’s data is stored, keeping your workspace clean and current. Each Workflow’s data is exportable to various spreadsheet formats including Microsoft Excel, LibreOffice and CSV — making the Workflow’s seamlessly fit into your daily…workflow!

@@ -43,5 +43,5 @@ At the top of this page, there is a red button labelled 'Delete'. Click this to 
 
 ApeScrape will then confirm that you wish to delete the selected Team. Click 'Ok' to Confirm.
 
-> **Warning**  
-> Once you delete a Team, it cannot be reversed and all Workflows, Criteria and Data Sources created will be permanently deleted, along with any data ApeScrape has collected. 
+**Warning**  
+Once you delete a Team, it cannot be reversed and all Workflows, Criteria and Data Sources created will be permanently deleted, along with any data ApeScrape has collected. 

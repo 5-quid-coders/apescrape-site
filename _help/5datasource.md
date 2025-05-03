@@ -23,7 +23,7 @@ Looking for information about **restaurants in Edinburgh** from a set of tourist
 - **Name:**  
   Foodie Traveller   
   **URL:**  
-  What is a one-sentence summary of this restaurant?
+  https://foodytraveller.com
 
 - **Name:**  
   Food4Fun   
@@ -33,8 +33,8 @@ Looking for information about **restaurants in Edinburgh** from a set of tourist
 
 ## When to Use Specific Page URLs vs Root URLs?
 
-- **Specific page URLs** should be used if you only want information from a few individual pages on a website.
-- **Root URLs** should be used if you want the Workflow to find **all relevant pages** within a website that contain the information you're looking for.
+- **Specific page URLs** should be used **only** if you would like to start crawling a website from a specific point rather than just the home page.
+- **Root URLs** should be used in **every other circumstance**
 
 > **Helpful Tip**  
 > The root URL of a website starts with `https://` and includes everything before the next `/`.  

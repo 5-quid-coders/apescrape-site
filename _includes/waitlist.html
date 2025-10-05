@@ -15,7 +15,7 @@
         btn.textContent = 'Submitting...';
 
         try {
-            const res = await fetch('http://localhost:8000/auth/waitlist/', { /* Replace with actual server URL */ /* https://apescrape.com/auth/waitlist/ */
+            const res = await fetch('http://apescrape.com/auth/waitlist/', { /* Replace with actual server URL */ /* https://apescrape.com/auth/waitlist/ */
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

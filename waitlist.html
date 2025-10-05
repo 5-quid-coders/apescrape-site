@@ -1,0 +1,48 @@
+---
+title: Waitlist
+url: /waitlist
+layout: default
+---
+
+<div class="">
+    <h2>Join Waitlist</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <button id="btn">Submit</button>
+    <div id="message"></div>
+</div>
+
+<script>
+    const btn = document.getElementById('btn');
+    const msg = document.getElementById('message');
+
+    btn.onclick = async () => {
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+
+        try {
+            const res = await fetch('http://localhost:8000/auth/waitlist/', { /* Replace with actual server URL */ /* https://apescrape.com/auth/waitlist/ */
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value
+                })
+            });
+
+            const data = await res.json();
+            msg.textContent = data.success ? 'Success' : data.error;
+
+            if (data.success) {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+            }
+        } catch {
+            msg.textContent = 'Connection error';
+            msg.className = 'error';
+        }
+
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+    };
+</script>

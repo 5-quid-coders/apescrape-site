@@ -2077,9 +2077,6 @@
   .mr-\[32px\] {
     margin-right: 32px;
   }
-  .mr-\[35px\] {
-    margin-right: 35px;
-  }
   .ml-auto {
     margin-left: auto;
   }
@@ -2373,8 +2370,8 @@
   .text-\[16px\] {
     font-size: 16px;
   }
-  .text-\[60px\] {
-    font-size: 60px;
+  .text-\[45px\] {
+    font-size: 45px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -2383,6 +2380,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-\[\#fbfbfe\] {
     color: #fbfbfe;

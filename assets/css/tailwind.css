@@ -2296,6 +2296,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-\[1rem\] {
+    gap: 1rem;
+  }
   .gap-\[29px\] {
     gap: 29px;
   }
@@ -2463,6 +2466,11 @@
   .max-sm\:visible {
     @media (width < 40rem) {
       visibility: visible;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
     }
   }
   .lg\:drawer-open {

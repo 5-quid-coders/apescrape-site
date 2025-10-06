@@ -2299,6 +2299,9 @@
   .gap-\[29px\] {
     gap: 29px;
   }
+  .gap-\[40px\] {
+    gap: 40px;
+  }
   .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -2391,6 +2394,9 @@
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);

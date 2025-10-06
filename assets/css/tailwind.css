@@ -3280,6 +3280,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -3621,6 +3624,9 @@
   .break-all {
     word-break: break-all;
   }
+  .text-\[\#433bff\] {
+    color: #433bff;
+  }
   .text-\[\#fbfbfe\] {
     color: #fbfbfe;
   }
@@ -3796,6 +3802,11 @@
       justify-content: space-between;
     }
   }
+  .sm\:gap-0 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:gap-\[40px\] {
     @media (width >= 40rem) {
       gap: 40px;
@@ -3803,6 +3814,31 @@
   }
   .sm\:\[font-size\:var\(--h4\)\] {
     @media (width >= 40rem) {
+      font-size: var(--h4);
+    }
+  }
+  .md\:my-16 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
+  .md\:gap-\[40px\] {
+    @media (width >= 48rem) {
+      gap: 40px;
+    }
+  }
+  .md\:\[font-size\:var\(--h4\)\] {
+    @media (width >= 48rem) {
       font-size: var(--h4);
     }
   }

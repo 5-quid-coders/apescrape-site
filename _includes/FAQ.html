@@ -1,4 +1,4 @@
-<div class="flex flex-col sm:flex-row sm:justify-between">
+<div class="flex flex-col gap-5 sm:gap-0 sm:flex-row sm:justify-between">
     <div class="flex flex-col">
         <h2 class="[font-size:var(--h2)] font-bold">FAQ</h2>
         <p>Questions you might have</p>
@@ -6,22 +6,24 @@
 
     <div class="flex flex-col gap-2">
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title font-semibold">How do I create an account?</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
-                registration process.</div>
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How do I tell Apescrape what to look for?</div>
+            <div class="collapse-content text-sm">With Apescrape you can simply describe your goals in plain English</div>
         </div>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                instructions sent to your email.</div>
+            <div class="collapse-title font-semibold">Do I have to supply all of the pages?</div>
+            <div class="collapse-content text-sm">Not at all! All you have to do it tell us which websites to search, and we will crawl the site to find the information</div>
         </div>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">How do I update my profile information?</div>
-            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.
-            </div>
+            <div class="collapse-title font-semibold">What if there are duplicates?</div>
+            <div class="collapse-content text-sm">Duplicated entries are detected and removed by default</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What if the data I'm looking for is spread around?</div>
+            <div class="collapse-content text-sm">Apescrape can aggregate information from multiple webpages into cohesive records</div>
         </div>
     </div>
 </div>

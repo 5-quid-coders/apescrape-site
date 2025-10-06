@@ -2303,6 +2303,9 @@
       }
     }
   }
+  .-mx-8 {
+    margin-inline: calc(var(--spacing) * -8);
+  }
   .mx-0 {
     margin-inline: calc(var(--spacing) * 0);
   }
@@ -3185,6 +3188,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-max {
+    width: max-content;
   }
   .w-min {
     width: min-content;

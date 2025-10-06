@@ -2203,6 +2203,9 @@
   .table {
     display: table;
   }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .\!h-full {
     height: 100% !important;
   }

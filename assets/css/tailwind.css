@@ -3846,6 +3846,11 @@
       width: max-content;
     }
   }
+  .sm\:w-min {
+    @media (width >= 40rem) {
+      width: min-content;
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;

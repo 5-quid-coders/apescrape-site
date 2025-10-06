@@ -2091,6 +2091,9 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .mr-\[35px\] {
+    margin-right: 35px;
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }

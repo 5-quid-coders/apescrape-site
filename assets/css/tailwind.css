@@ -2382,6 +2382,43 @@
       }
     }
   }
+  .join-vertical {
+    flex-direction: column;
+    > .join-item:first-child {
+      --join-ss: var(--radius-field);
+      --join-se: var(--radius-field);
+      --join-es: 0;
+      --join-ee: 0;
+    }
+    :first-child:not(:last-child) {
+      .join-item {
+        --join-ss: var(--radius-field);
+        --join-se: var(--radius-field);
+        --join-es: 0;
+        --join-ee: 0;
+      }
+    }
+    > .join-item:last-child {
+      --join-ss: 0;
+      --join-se: 0;
+      --join-es: var(--radius-field);
+      --join-ee: var(--radius-field);
+    }
+    :last-child:not(:first-child) {
+      .join-item {
+        --join-ss: 0;
+        --join-se: 0;
+        --join-es: var(--radius-field);
+        --join-ee: var(--radius-field);
+      }
+    }
+    .join-item {
+      &:where(*:not(:first-child)) {
+        margin-inline-start: 0;
+        margin-block-start: calc(var(--border, 1px) * -1);
+      }
+    }
+  }
   .join-item {
     &:where(*:not(:first-child)) {
       margin-inline-start: calc(var(--border, 1px) * -1);
@@ -3243,6 +3280,12 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-\[1rem\] {
     gap: 1rem;
   }
@@ -3306,6 +3349,9 @@
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
+  }
+  .border-base-300 {
+    border-color: var(--color-base-300);
   }
   .border-t-base-300 {
     border-top-color: var(--color-base-300);
@@ -3524,6 +3570,10 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -3531,6 +3581,12 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .\[font-size\:var\(--h1\)\] {
+    font-size: var(--h1);
+  }
+  .\[font-size\:var\(--h2\)\] {
+    font-size: var(--h2);
   }
   .\[font-size\:var\(--h3\)\] {
     font-size: var(--h3);

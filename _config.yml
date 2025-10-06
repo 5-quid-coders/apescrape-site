@@ -16,6 +16,9 @@
 collections:
   help:
     output: true
+  
+plugins:
+  - jekyll-octicons
 
 
 # Build settings

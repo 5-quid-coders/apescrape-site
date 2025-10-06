@@ -12,7 +12,22 @@
 
     <div class="flex ml-auto items-center space-x-4 h-full py-[9px]">
       <a href="https://dashboard.apescrape.com"
-        class="cursor-pointer !h-full px-4 py-2 bg-[#2f27ce] text-[#fbfbfe] rounded-full">Dashboard</a>
+        class="cursor-pointer !h-full px-4 py-2 bg-[#2f27ce] text-[#fbfbfe] rounded-full hidden sm:block">Dashboard</a>
+
+      <div class="dropdown dropdown-end sm:hidden">
+        <div tabindex="0" role="button" class="m-1 mr-4 sm:hidden">
+          {% octicon three-bars height:24 %}
+        </div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm sm:hidden">
+          <li><a href="about/">About</a></li>
+          <li><a href="pricing/">Pricing</a></li>
+          <li><a href="mailto:alanjsfleming5@gmail.com">Contact</a></li>
+          <li>
+            <a href="https://dashboard.apescrape.com"
+        class="cursor-pointer !h-full px-4 py-2 bg-[#2f27ce] text-[#fbfbfe] rounded-full w-min">Dashboard</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </div>

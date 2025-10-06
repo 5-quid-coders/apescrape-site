@@ -2035,6 +2035,48 @@
   .sticky {
     position: sticky;
   }
+  .dropdown-right {
+    --anchor-h: right;
+    --anchor-v: span-bottom;
+    .dropdown-content {
+      inset-inline-start: 100%;
+      top: calc(0.25rem * 0);
+      bottom: auto;
+      transform-origin: left;
+    }
+  }
+  .dropdown-left {
+    --anchor-h: left;
+    --anchor-v: span-bottom;
+    .dropdown-content {
+      inset-inline-end: 100%;
+      top: calc(0.25rem * 0);
+      bottom: auto;
+      transform-origin: right;
+    }
+  }
+  .dropdown-end {
+    --anchor-h: span-left;
+    :where(.dropdown-content) {
+      inset-inline-end: calc(0.25rem * 0);
+    }
+    &.dropdown-left {
+      --anchor-h: left;
+      --anchor-v: span-top;
+      .dropdown-content {
+        top: auto;
+        bottom: calc(0.25rem * 0);
+      }
+    }
+    &.dropdown-right {
+      --anchor-h: right;
+      --anchor-v: span-top;
+      .dropdown-content {
+        top: auto;
+        bottom: calc(0.25rem * 0);
+      }
+    }
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -2098,6 +2140,9 @@
   }
   .isolate {
     isolation: isolate;
+  }
+  .z-1 {
+    z-index: 1;
   }
   .z-8 {
     z-index: 8;
@@ -3049,6 +3094,9 @@
   .btn-block {
     width: 100%;
   }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
@@ -3057,6 +3105,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-min {
+    width: min-content;
   }
   .w-screen {
     width: 100vw;
@@ -3182,6 +3233,12 @@
   }
   .overflow-scroll {
     overflow: scroll;
+  }
+  .rounded-box {
+    border-radius: var(--radius-box);
+  }
+  .rounded-box {
+    border-radius: var(--radius-box);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -3506,6 +3563,10 @@
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -3589,6 +3650,11 @@
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .sm\:flex-row {

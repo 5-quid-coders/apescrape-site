@@ -1,33 +1,31 @@
 <div class="px-4" id="navbar">
-  <nav
-    class="text-[16px] font-medium rounded-full bg-[#D8DEF8] mx-auto mt-[29px] flex flex-row items-center justify-between max-w-[967px] w-full h-[60px] px-[12px] py-0 gap-0 border-0 shadow-none">
-    <a href="/" class="mr-[32px] h-full py-2 pl-1 aspect-square">
-      <img src="/assets/logo.svg" alt="" class="">
+  <nav class="bg-primary-content rounded font-medium  mx-auto mt-7 flex flex-row items-center justify-between max-w-5xl w-full h-[60px] px-[12px] py-0 gap-0 shadow-none">
+    <a href="/" class="mr-8 h-full py-2 pl-1 aspect-square">
+      <img src="/assets/logo.svg" alt="" class="w-14">
     </a>
     <div class="hidden sm:flex items-center gap-[29px]">
-      <a href="/about">About</a>
-      <a href="/pricing">Pricing</a>
-      <a href="mailto:alanjsfleming5@gmail.com">Contact</a>
+      <a class="link-hover" href="/">Home</a>
+      <a class="link-hover" href="/about">About</a>
+      <a class="link-hover" href="/pricing">Pricing</a>
+      <a class="link-hover" href="mailto:alanjsfleming5@gmail.com"><i class="bi bi-box-arrow-up-right"></i> Contact Us</a>
     </div>
 
     <div class="flex ml-auto items-center space-x-4 h-full py-[9px]">
-      <a href="/waitlist"
-        class="cursor-pointer !h-full px-4 py-2 bg-[#2f27ce] text-[#fbfbfe] rounded-full hidden sm:block sm:mr-0">Dashboard</a>
+      <a href="/waitlist" class="cursor-pointer btn btn-primary max-sm:hidden">Dashboard</a>
+    </div>
 
-      <div class="dropdown dropdown-end sm:hidden">
-        <div tabindex="0" role="button" class="m-1 mr-4 sm:hidden">
-          {% octicon three-bars height:24 %}
-        </div>
-        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm sm:hidden">
-          <li><a href="/about">About</a></li>
-          <li><a href="/pricing">Pricing</a></li>
-          <li><a href="mailto:alanjsfleming5@gmail.com">Contact</a></li>
-          <li>
-            <a href="/waitlist"
-        class="cursor-pointer !h-full px-4 py-2 bg-[#2f27ce] text-[#fbfbfe] rounded-full w-min">Dashboard</a>
-          </li>
-        </ul>
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="m-1 mr-4 sm:hidden">
+        <i class="bi bi-list text-4xl btn btn-ghost"></i>
       </div>
+      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm sm:hidden">
+        <li><a href="/about">About</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="mailto:alanjsfleming5@gmail.com">Contact</a></li>
+        <li class="mt-1">
+          <a href="/waitlist" class="cursor-pointer px-4 py-2 btn btn-primary">Dashboard</a>
+        </li>
+      </ul>
     </div>
   </nav>
 </div>

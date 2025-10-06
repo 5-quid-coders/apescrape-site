@@ -2,7 +2,15 @@
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
 
-* {
+@theme {
+  --font-size-h1: 3.157rem;
+  --font-size-h2: 2.369rem;
+  --font-size-h3: 1.777rem;
+  --font-size-h4: 1.333rem;
+  --font-size-h5: 1rem;
+}
+
+:root {
     --font-scale: 1.333;
     --p: 1rem;
     --h5: calc(var(--p) * var(--font-scale));

@@ -377,6 +377,11 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-size-h1: 3.157rem;
+    --font-size-h2: 2.369rem;
+    --font-size-h3: 1.777rem;
+    --font-size-h4: 1.333rem;
+    --font-size-h5: 1rem;
   }
 }
 @layer base {
@@ -2170,6 +2175,12 @@
     border-end-start-radius: var(--tabcontent-radius-es);
     border-end-end-radius: var(--tabcontent-radius-ee);
   }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
   .modal-box {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -2321,6 +2332,12 @@
   }
   .mx-16 {
     margin-inline: calc(var(--spacing) * 16);
+  }
+  .mx-\[5\%\] {
+    margin-inline: 5%;
+  }
+  .mx-\[20\%\] {
+    margin-inline: 20%;
   }
   .mx-auto {
     margin-inline: auto;
@@ -2816,6 +2833,9 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -2866,6 +2886,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-\[18px\] {
+    margin-bottom: 18px;
   }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
@@ -3120,11 +3143,23 @@
   .w-full {
     width: 100%;
   }
+  .w-max {
+    width: max-content;
+  }
   .w-min {
     width: min-content;
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-\[225px\] {
+    max-width: 225px;
+  }
+  .max-w-\[3000px\] {
+    max-width: 3000px;
+  }
+  .max-w-\[300px\] {
+    max-width: 300px;
   }
   .max-w-\[967px\] {
     max-width: 967px;
@@ -3142,6 +3177,9 @@
     flex-shrink: 1;
   }
   .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  .shrink-0 {
     flex-shrink: 0;
   }
   .flex-grow {
@@ -3220,8 +3258,14 @@
   .gap-0 {
     gap: calc(var(--spacing) * 0);
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-\[1rem\] {
     gap: 1rem;
@@ -3369,6 +3413,9 @@
   .px-\[12px\] {
     padding-inline: 12px;
   }
+  .px-\[40px\] {
+    padding-inline: 40px;
+  }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
@@ -3509,11 +3556,26 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .\[font-size\:var\(--h1\)\] {
+    font-size: var(--h1);
+  }
+  .\[font-size\:var\(--h2\)\] {
+    font-size: var(--h2);
+  }
+  .\[font-size\:var\(--h3\)\] {
+    font-size: var(--h3);
+  }
+  .\[font-size\:var\(--h4\)\] {
+    font-size: var(--h4);
+  }
+  .\[font-size\:var\(--h5\)\] {
+    font-size: var(--h5);
+  }
+  .\[font-size\:var\(--p\)\] {
+    font-size: var(--p);
+  }
   .text-\[16px\] {
     font-size: 16px;
-  }
-  .text-\[45px\] {
-    font-size: 45px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -3671,6 +3733,26 @@
       visibility: visible;
     }
   }
+  .sm\:order-1 {
+    @media (width >= 40rem) {
+      order: 1;
+    }
+  }
+  .sm\:order-2 {
+    @media (width >= 40rem) {
+      order: 2;
+    }
+  }
+  .sm\:my-16 {
+    @media (width >= 40rem) {
+      margin-block: calc(var(--spacing) * 16);
+    }
+  }
+  .sm\:mt-16 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 16);
+    }
+  }
   .sm\:mr-0 {
     @media (width >= 40rem) {
       margin-right: calc(var(--spacing) * 0);
@@ -3691,9 +3773,44 @@
       display: none;
     }
   }
+  .sm\:w-max {
+    @media (width >= 40rem) {
+      width: max-content;
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
+    }
+  }
+  .sm\:justify-between {
+    @media (width >= 40rem) {
+      justify-content: space-between;
+    }
+  }
+  .sm\:gap-2 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 2);
+    }
+  }
+  .sm\:gap-\[40px\] {
+    @media (width >= 40rem) {
+      gap: 40px;
+    }
+  }
+  .sm\:\[font-size\:var\(--h1\)\] {
+    @media (width >= 40rem) {
+      font-size: var(--h1);
+    }
+  }
+  .sm\:\[font-size\:var\(--h4\)\] {
+    @media (width >= 40rem) {
+      font-size: var(--h4);
+    }
+  }
+  .sm\:\[font-size\:var\(--h5\)\] {
+    @media (width >= 40rem) {
+      font-size: var(--h5);
     }
   }
   .lg\:drawer-open {
@@ -3735,7 +3852,7 @@
     }
   }
 }
-* {
+:root {
   --font-scale: 1.333;
   --p: 1rem;
   --h5: calc(var(--p) * var(--font-scale));

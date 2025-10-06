@@ -3106,9 +3106,6 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
-  .w-\[92\%\] {
-    width: 92%;
-  }
   .w-full {
     width: 100%;
   }
@@ -3288,9 +3285,6 @@
   }
   .bg-\[\#D8DEF8\] {
     background-color: #D8DEF8;
-  }
-  .bg-\[2f27ce\] {
-    background-color: 2f27ce;
   }
   .bg-base-100 {
     background-color: var(--color-base-100);

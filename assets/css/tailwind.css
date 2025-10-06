@@ -2074,6 +2074,9 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .mr-\[32px\] {
+    margin-right: 32px;
+  }
   .mr-\[35px\] {
     margin-right: 35px;
   }
@@ -2337,6 +2340,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-\[9px\] {
     padding-block: 9px;

@@ -2867,8 +2867,23 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
+  .mt-35 {
+    margin-top: calc(var(--spacing) * 35);
+  }
+  .mt-45 {
+    margin-top: calc(var(--spacing) * 45);
+  }
   .mt-\[29px\] {
     margin-top: 29px;
+  }
+  .mt-\[40\%\] {
+    margin-top: 40%;
+  }
+  .mt-\[40vh\] {
+    margin-top: 40vh;
   }
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);

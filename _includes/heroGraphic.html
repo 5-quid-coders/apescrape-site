@@ -1,0 +1,219 @@
+<style>
+  .hg-wrap { --hg-line: var(--color-base-300); }
+  .hg-site { animation: hg-pulse 3s ease-in-out infinite; }
+  .hg-site:nth-child(2) { animation-delay: .4s; }
+  .hg-site:nth-child(3) { animation-delay: .8s; }
+  .hg-site:nth-child(4) { animation-delay: 1.2s; }
+  @keyframes hg-pulse {
+    0%, 100% { border-color: var(--color-base-300); }
+    50% { border-color: var(--color-primary); }
+  }
+  .hg-flow { stroke-dasharray: 4 6; animation: hg-dash 1.2s linear infinite; }
+  @keyframes hg-dash { to { stroke-dashoffset: -20; } }
+
+  .hg-tab { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 46px; padding: 0; background: none; border: none; cursor: pointer; color: var(--color-base-content); opacity: .45; font-size: .75rem; font-weight: 600; transition: opacity .2s; }
+  .hg-tab:hover { opacity: .8; }
+  .hg-tab[aria-selected="true"] { opacity: 1; color: var(--color-primary); }
+  .hg-track { display: block; width: 100%; height: 3px; background: var(--color-base-300); }
+  .hg-fill { display: block; height: 100%; width: 0; background: var(--color-primary); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hg-site, .hg-flow { animation: none; }
+  }
+</style>
+
+<div id="hg" class="hg-wrap rounded-box border border-base-300 bg-base-100 shadow-xl p-6 sm:p-8 flex flex-col items-center gap-5">
+  <!-- query -->
+  <div class="w-full">
+    <div class="text-xs uppercase tracking-wide opacity-50 mb-2">Query</div>
+    <div class="flex items-center gap-2 border border-base-300 bg-base-100 px-3 py-2.5">
+      <i class="bi bi-chat-square-text text-primary shrink-0"></i>
+      <span id="hg-query" class="text-sm">Potential stockists for our coffee</span>
+    </div>
+  </div>
+
+  <!-- sources -->
+  <div class="w-full">
+    <div class="text-xs uppercase tracking-wide opacity-50 mb-2">Sources</div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="hg-site border border-base-300 bg-base-100 p-3 flex flex-col gap-2">
+        <div class="flex items-center gap-1.5 text-xs"><i class="bi bi-globe text-primary"></i><span id="hg-d0" class="font-mono opacity-60 truncate">businessdir.co</span></div>
+        <div class="h-1.5 bg-base-200 w-3/4"></div>
+        <div class="h-1.5 bg-base-200 w-1/2"></div>
+      </div>
+      <div class="hg-site border border-base-300 bg-base-100 p-3 flex flex-col gap-2">
+        <div class="flex items-center gap-1.5 text-xs"><i class="bi bi-globe text-secondary"></i><span id="hg-d1" class="font-mono opacity-60 truncate">localfinder.uk</span></div>
+        <div class="h-1.5 bg-base-200 w-2/3"></div>
+        <div class="h-1.5 bg-base-200 w-5/6"></div>
+      </div>
+      <div class="hg-site border border-base-300 bg-base-100 p-3 flex flex-col gap-2">
+        <div class="flex items-center gap-1.5 text-xs"><i class="bi bi-globe text-info"></i><span id="hg-d2" class="font-mono opacity-60 truncate">chamber.org</span></div>
+        <div class="h-1.5 bg-base-200 w-5/6"></div>
+        <div class="h-1.5 bg-base-200 w-1/2"></div>
+      </div>
+      <div class="hg-site border border-base-300 bg-base-100 p-3 flex flex-col gap-2">
+        <div class="flex items-center gap-1.5 text-xs"><i class="bi bi-globe text-success"></i><span id="hg-d3" class="font-mono opacity-60 truncate">trade-list.io</span></div>
+        <div class="h-1.5 bg-base-200 w-3/4"></div>
+        <div class="h-1.5 bg-base-200 w-2/3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- converging flow into ApeScrape -->
+  <svg viewBox="0 0 300 44" class="w-full max-w-md h-11" preserveAspectRatio="none" aria-hidden="true">
+    <path class="hg-flow" d="M40 2 C40 22, 150 22, 150 42" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+    <path class="hg-flow" d="M113 2 C113 22, 150 22, 150 42" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+    <path class="hg-flow" d="M187 2 C187 22, 150 22, 150 42" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+    <path class="hg-flow" d="M260 2 C260 22, 150 22, 150 42" fill="none" stroke="var(--color-primary)" stroke-width="2"/>
+  </svg>
+
+  <div class="flex items-center gap-2 bg-primary text-primary-content px-4 py-2 font-medium shadow-sm -mt-3">
+    <img src="/assets/logo.svg" alt="" class="w-5 h-5 invert brightness-0"><span>ApeScrape extracts &amp; structures</span>
+  </div>
+
+  <i class="bi bi-chevron-down text-primary text-xl -my-2"></i>
+
+  <!-- structured output table -->
+  <div class="w-full border border-base-300 overflow-hidden">
+    <div class="flex items-center justify-between px-4 h-10 border-b border-b-base-300 bg-base-200/60">
+      <span class="text-sm font-semibold truncate min-w-0 mr-2">Records</span>
+      <span class="badge badge-success gap-1 shrink-0"><span class="w-2 h-2 rounded-full bg-success-content"></span> <span id="hg-badge">320 leads</span></span>
+    </div>
+    <table class="table table-sm">
+      <thead class="bg-base-200/40">
+        <tr id="hg-cols"><th>Business</th><th>Type</th><th>Location</th><th class="hidden sm:table-cell">Website</th></tr>
+      </thead>
+      <tbody id="hg-rows">
+        <tr><td class="font-medium">Brew &amp; Co</td><td>Coffee shop</td><td>Leeds</td><td class="hidden sm:table-cell">brewandco.co.uk</td></tr>
+        <tr><td class="font-medium">The Corner Cafe</td><td>Cafe</td><td>Bristol</td><td class="hidden sm:table-cell">thecornercafe.co.uk</td></tr>
+        <tr><td class="font-medium">Harvest Deli</td><td>Deli</td><td>London</td><td class="hidden sm:table-cell">harvestdeli.co.uk</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- example switcher -->
+  <div id="hg-tabs" class="flex items-center justify-center gap-3 pt-1">
+    <button class="hg-tab" data-i="0" aria-label="Example 1"><span>1</span><span class="hg-track"><span class="hg-fill"></span></span></button>
+    <button class="hg-tab" data-i="1" aria-label="Example 2"><span>2</span><span class="hg-track"><span class="hg-fill"></span></span></button>
+    <button class="hg-tab" data-i="2" aria-label="Example 3"><span>3</span><span class="hg-track"><span class="hg-fill"></span></span></button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var DWELL = 6000;
+    var examples = [
+      {
+        sites: ["businessdir.co", "localfinder.uk", "chamber.org", "trade-list.io"],
+        query: "Potential stockists for our coffee",
+        badge: "320 leads",
+        cols: ["Business", "Type", "Location", "Website"],
+        rows: [
+          ["Brew & Co", "Coffee shop", "Leeds", "brewandco.co.uk"],
+          ["The Corner Cafe", "Cafe", "Bristol", "thecornercafe.co.uk"],
+          ["Harvest Deli", "Deli", "London", "harvestdeli.co.uk"]
+        ]
+      },
+      {
+        sites: ["northwind.co", "acmefin.com", "brightpay.io", "ledgerly.co"],
+        query: "Open internships",
+        badge: "12 internships",
+        cols: ["Company", "Role", "Location", "Posted"],
+        rows: [
+          ["Northwind", "Software Intern", "Remote", "2d ago"],
+          ["AcmeFin", "Data Intern", "London", "5d ago"],
+          ["BrightPay", "Marketing Intern", "Manchester", "1w ago"]
+        ]
+      },
+      {
+        sites: ["coursehub.com", "learnfast.io", "skillbase.co", "upskill.academy"],
+        query: "Competitor short courses",
+        badge: "84 courses",
+        cols: ["Course", "Provider", "Price", "Duration"],
+        rows: [
+          ["Data Analytics", "LearnFast", "£299", "6 weeks"],
+          ["Digital Marketing", "SkillBase", "£249", "4 weeks"],
+          ["Python for Beginners", "Upskill", "£199", "8 weeks"]
+        ]
+      }
+    ];
+
+    var card = document.getElementById("hg");
+    if (!card) return;
+    var domains = [0, 1, 2, 3].map(function (i) { return document.getElementById("hg-d" + i); });
+    var queryEl = document.getElementById("hg-query");
+    var badgeEl = document.getElementById("hg-badge");
+    var colsEl = document.getElementById("hg-cols");
+    var rowsEl = document.getElementById("hg-rows");
+    var tabs = Array.prototype.slice.call(document.querySelectorAll("#hg-tabs .hg-tab"));
+    var fills = tabs.map(function (t) { return t.querySelector(".hg-fill"); });
+
+    var idx = 0;
+    var timer = null;
+    var paused = false;
+
+    function render(i) {
+      var ex = examples[i];
+      domains.forEach(function (d, k) { if (d) d.textContent = ex.sites[k]; });
+      queryEl.textContent = ex.query;
+      badgeEl.textContent = ex.badge;
+      colsEl.innerHTML = ex.cols.map(function (c, k) {
+        return "<th" + (k === 3 ? ' class="hidden sm:table-cell"' : "") + ">" + c + "</th>";
+      }).join("");
+      rowsEl.innerHTML = ex.rows.map(function (r) {
+        return "<tr>" + r.map(function (c, k) {
+          var cls = [];
+          if (k === 0) cls.push("font-medium");
+          if (k === 3) cls.push("hidden", "sm:table-cell");
+          return "<td" + (cls.length ? ' class="' + cls.join(" ") + '"' : "") + ">" + c + "</td>";
+        }).join("") + "</tr>";
+      }).join("");
+      tabs.forEach(function (t, k) { t.setAttribute("aria-selected", k === i ? "true" : "false"); });
+    }
+
+    function resetFills() {
+      fills.forEach(function (f) { f.style.transition = "none"; f.style.width = "0%"; });
+    }
+
+    function animateActive() {
+      var f = fills[idx];
+      if (!f) return;
+      f.style.transition = "none";
+      f.style.width = "0%";
+      // force reflow so the transition restarts
+      void f.offsetWidth;
+      f.style.transition = "width " + DWELL + "ms linear";
+      f.style.width = "100%";
+    }
+
+    function schedule() {
+      clearTimeout(timer);
+      timer = setTimeout(function () { go((idx + 1) % examples.length); }, DWELL);
+    }
+
+    function go(i) {
+      idx = i;
+      render(i);
+      resetFills();
+      if (!paused) { animateActive(); schedule(); }
+    }
+
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () { go(parseInt(t.getAttribute("data-i"), 10)); });
+    });
+
+    card.addEventListener("mouseenter", function () {
+      paused = true;
+      clearTimeout(timer);
+      var f = fills[idx];
+      if (f) { f.style.transition = "none"; f.style.width = getComputedStyle(f).width; }
+    });
+    card.addEventListener("mouseleave", function () {
+      paused = false;
+      animateActive();
+      schedule();
+    });
+
+    go(0);
+  })();
+</script>

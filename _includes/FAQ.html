@@ -1,30 +1,61 @@
-<div class="flex flex-col gap-5 sm:flex-row sm:justify-between">
-  <div class="flex flex-col">
-    <h2 class="text-6xl font-bold">FAQ</h2>
-    <p>For the questions you may or may not have</p>
-  </div>
+<section class="w-full">
+  <div class="max-w-5xl mx-auto px-4 py-20 flex flex-col gap-8 sm:flex-row sm:justify-between">
+    <div class="flex flex-col shrink-0">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Frequently asked questions</h2>
+      <p class="opacity-70 mt-1">The questions you may or may not have.</p>
+    </div>
 
-  <div class="flex flex-col gap-2">
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-semibold">How do I tell Apescrape what to look for?</div>
-      <div class="collapse-content text-sm">With Apescrape you describe the data you want in plain English</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-semibold">Do I have to list every page I want to search?</div>
-      <div class="collapse-content text-sm">Not at all! All ApeScrape needs is a list of websites.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-semibold">What if there are duplicates?</div>
-      <div class="collapse-content text-sm">Duplicated entries are detected and removed automagically.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title font-semibold">What if the data I'm looking for is split across multiple pages?</div>
-      <div class="collapse-content text-sm">Apescrape can aggregate information from multiple webpages into cohesive records.</div>
+    <div class="flex flex-col gap-2 w-full sm:max-w-2xl">
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" checked />
+        <div class="collapse-title font-semibold">How do I tell ApeScrape what to look for?</div>
+        <div class="collapse-content text-sm">You build a query: give each field a name and describe it in plain English. Our AI extracts exactly those fields from every page.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Do I have to list every page I want to search?</div>
+        <div class="collapse-content text-sm">Not at all. Just add a website and ApeScrape reads through the pages for you.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">What if there are duplicates?</div>
+        <div class="collapse-content text-sm">ApeScrape detects and merges duplicate records into a single clean row for you, automagically.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Can I keep my data up to date?</div>
+        <div class="collapse-content text-sm">Yes. Give a collection a schedule and ApeScrape re-runs it for you automatically, so your data is never stale.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Can I work with my team?</div>
+        <div class="collapse-content text-sm">Absolutely. Create a workspace, invite your teammates and share your collections and results across everyone.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Do I need to know how to code?</div>
+        <div class="collapse-content text-sm">No. You describe what you want in plain English, and there's nothing to install or script. If you can use a spreadsheet, you can use ApeScrape.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">What kind of data can I collect?</div>
+        <div class="collapse-content text-sm">Anything you can describe: names, prices, dates, deadlines, contact details, descriptions and more, pulled together from across many pages and sites.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Is the information collected publicly available?</div>
+        <div class="collapse-content text-sm">ApeScrape is built for gathering information that is already public on the open web. You're responsible for how you use it and for respecting each site's terms.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">Where do my results go?</div>
+        <div class="collapse-content text-sm">Everything ApeScrape collects appears in clean, structured tables inside your workspace that you can sort and explore.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="faq-accordion" />
+        <div class="collapse-title font-semibold">How much does it cost?</div>
+        <div class="collapse-content text-sm">We're still finalising pricing. Join the waitlist and we'll share the details with you before launch.</div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+</section>

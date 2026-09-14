@@ -1,34 +1,34 @@
 ---
-title: 2. Criteria
+title: 2. Queries
 layout: help_article
 ---
 
-# Criteria
+# Queries
 
-The **Criteria** is one of the components that make up a **Workflow**. It specifies exactly what data you want to be collected from web pages. 
+A **Query** is one of the components that make up a **Collection**. It specifies exactly what data you want to be extracted from web pages.
 
-A Criteria has two parts:
+A Query has two main parts:
 
-- **Page Validators**
-- **Fields**
-
-
-## Page Validators
-The **Page Validator** is an English description that tells your Workflow whether a page it encounters is relevant to your search.
+- **Fields** (your schema)
+- **Deduplication keys**
 
 
-## Fields
+## Fields (Schema)
 
-Each **Field** of a Criteria describes the specific type of information you want to extract from web pages. It consists of a **Name** and **Description**. 
+Each **Field** describes a specific piece of information you want to extract. A field has a **Name** and a **Description**.
 
-The **Name** of a field is how this field will be referred to when data is collected.
+The **Name** is how the field will be referred to when data is collected. Think of it as a column header in a spreadsheet.
 
-The **Description** is a simple one-sentence English explanation of what data your Workflow should search for.
+The **Description** is a simple, one-sentence English explanation of exactly what the AI should look for on the page.
 
-Some fields can optionally be marked as **Unique Identifiers"**. This is used to combine duplicated data. For example, if I had a field called "name", and I marked it as a unique identifier, then any data which had the same value for the name field and doesn't have any other conflicts will be merged. An important note is that if you add any unique identifiers, any data that does not populate at least one unique identifier will be discarded.
 
-> **Helpful Tip**  
-> When creating your Fields, think of a spreadsheet containing the data output. The **Name** part of the Field will be the column header, and the **Description** will be the type of data that would populate that column.
+## Deduplication keys
+
+**Deduplication keys** are used to combine duplicated records. Choose one or more of your fields as deduplication keys, and any records that share the same values for those keys (and don't otherwise conflict) will be merged into a single combined record.
+
+
+> **Helpful Tip**
+> When creating your Fields, picture the spreadsheet you want at the end. The **Name** is the column header, and the **Description** is the type of data that would fill that column.
 
 
 ## Now Let's Put It All Together
@@ -36,28 +36,23 @@ Some fields can optionally be marked as **Unique Identifiers"**. This is used to
 ### Scenario:
 Looking for information about **restaurants in Edinburgh** from a set of tourist websites.
 
-### Page Validator:
-**Restaurant in Edinburgh**
-
-> Now let’s say you are looking for the names of the restaurant and their descriptions:
-
 ### Fields:
 
-- **Name:**  
-  Restaurant name  
-  **Description:**  
+- **Name:**
+  Restaurant name
+  **Description:**
   What is this restaurant called?
 
-- **Name:**  
-  Restaurant type  
-  **Description:**  
+- **Name:**
+  Restaurant summary
+  **Description:**
   What is a one-sentence summary of this restaurant?
 
+### Deduplication keys:
+Set **Restaurant name** as a deduplication key so the same restaurant found on multiple pages is merged into one record.
 
-## How to Make the Most of Your Criteria
 
-- Be **specific** in the Field Descriptions to avoid confusion between similar data points.
-- It is best practice to look at some of the websites you want to collect data from to get familiar with how to best phrase your Descriptions.
+## How to Make the Most of Your Query
 
-> **Helpful Tip**  
-> Once your Criteria is created, you can reuse it when making new Workflows. This saves time if you want to collect the same types of information from different websites.
+- Be **specific** in your Field Descriptions to avoid confusion between similar data points.
+- It helps to look at a few of the pages you want to collect from, so you can phrase your Descriptions to match what's actually on them.

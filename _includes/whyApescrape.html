@@ -1,51 +1,77 @@
-<div id="why-apescrape" class="flex flex-col w-full gap-10">
-  <h3 class="[font-size:var(--h3)] font-semibold mx-auto">Why Apescrape?</h3>
-
-  <div class="flex flex-col sm:flex-row gap-[1rem]">
-    <div class="flex flex-col gap-5 w-full p-10 bg-primary-content  border-base-200">
-      <div class="mx-auto w-min h-min">
-        {% octicon clock height:80 fill:var(--color-primary) %}
-      </div>
-      <h4 class="mx-auto [font-size:var(--h4)]">It saves time</h4>
-      <p class="[font-size:var(--p)]">Instead of spending days trawling the web, you can leave it to our trusty team of apes while you put your feet up.</p>
+<section id="why-apescrape" class="w-full">
+  <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col gap-16">
+    <div class="flex flex-col gap-3 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Built to make web data effortless</h2>
+      <p class="opacity-70 max-w-xl mx-auto">Turn days of manual research into a few minutes of setup.</p>
     </div>
 
-    <div class="flex flex-col gap-5 w-full p-10 bg-primary-content border-base-200">
-      <div class="mx-auto w-min h-min">
-        {% octicon light-bulb height:80 fill:var(--color-primary) %}
+    <!-- Row 1: text left, visual right -->
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-14 items-center">
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 flex items-center justify-center bg-primary/10"><i class="bi bi-chat-square-text text-2xl text-primary"></i></div>
+        <h3 class="text-2xl font-bold">Describe it, don't code it</h3>
+        <p class="opacity-70">Tell ApeScrape what you're looking for in plain English. Its AI reads each page and pulls out exactly the fields you asked for, however messy the source.</p>
       </div>
-      <h4 class="mx-auto [font-size:var(--h4)]">It's smart</h4>
-      <p class="[font-size:var(--p)]">Struggling to aggregate your data? ApeScrape automatically combines the data it finds into a consistent format.</p>
+      <div class="border border-base-300 bg-base-100 p-5 flex flex-col gap-3 shadow-sm">
+        <div class="text-xs uppercase tracking-wide opacity-50">Query</div>
+        <div class="flex items-center gap-2 border border-base-300 px-3 py-2">
+          <i class="bi bi-chat-square-text text-primary"></i>
+          <span class="text-sm">Products and their prices</span>
+        </div>
+        <i class="bi bi-arrow-down text-primary mx-auto"></i>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline">Name</span>
+          <span class="badge badge-outline">Price</span>
+          <span class="badge badge-outline">Rating</span>
+          <span class="badge badge-outline">In stock</span>
+        </div>
+      </div>
     </div>
 
-    <div class="flex flex-col gap-5 w-full p-10 bg-primary-content border-base-200">
-      <div class="mx-auto w-min h-min">
-        {% octicon check-circle-fill height:80 fill:var(--color-primary) %}
+    <!-- Row 2: visual left, text right -->
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-14 items-center">
+      <div class="flex flex-col gap-4 md:order-2">
+        <div class="w-12 h-12 flex items-center justify-center bg-secondary/10"><i class="bi bi-arrow-repeat text-2xl text-secondary"></i></div>
+        <h3 class="text-2xl font-bold">Set it once, stay up to date</h3>
+        <p class="opacity-70">Give a collection a schedule and ApeScrape re-runs it for you, so your data is always current without anyone lifting a finger.</p>
       </div>
-      <h4 class="mx-auto [font-size:var(--h4)]">It's simple</h4>
-      <p class="[font-size:var(--p)]">Our user interface is designed such that even a gorilla (or your granny) could use it.</p>
+      <div class="border border-base-300 bg-base-100 p-5 flex flex-col gap-3 shadow-sm md:order-1">
+        <div class="flex items-center gap-2 font-semibold"><i class="bi bi-arrow-repeat text-secondary"></i> Runs automatically</div>
+        <div class="flex items-center gap-2 text-sm"><i class="bi bi-calendar-event opacity-60"></i> Every Monday at 09:00</div>
+        <div class="flex items-center justify-between text-sm border-t border-base-200 pt-3">
+          <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-success"></span> Last run</span>
+          <span class="opacity-60">2 hours ago</span>
+        </div>
+        <div class="flex items-center justify-between text-sm">
+          <span class="flex items-center gap-2"><i class="bi bi-clock opacity-60"></i> Next run</span>
+          <span class="opacity-60">in 5 days</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3: text left, visual right -->
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-14 items-center">
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 flex items-center justify-center bg-success/10"><i class="bi bi-people-fill text-2xl text-success"></i></div>
+        <h3 class="text-2xl font-bold">Built for your whole team</h3>
+        <p class="opacity-70">Organise your work into shared workspaces, invite teammates, and keep an eye on usage across everyone. No coding required.</p>
+      </div>
+      <div class="border border-base-300 bg-base-100 p-5 flex flex-col gap-3 shadow-sm">
+        <div class="flex items-center gap-2 font-semibold pb-2 border-b border-base-200"><img src="/assets/logo.svg" alt="" class="w-6 h-6"> ApeScrape HQ</div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center font-semibold text-xs">AF</span>
+          <span class="flex-1">Alan Fleming</span><span class="opacity-50 text-xs">Owner</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-8 h-8 rounded-full bg-secondary/15 text-secondary flex items-center justify-center font-semibold text-xs">JB</span>
+          <span class="flex-1">Josh Britain</span><span class="opacity-50 text-xs">Member</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <span class="w-8 h-8 rounded-full bg-info/15 text-info flex items-center justify-center font-semibold text-xs">BG</span>
+          <span class="flex-1">Ben Greenidge</span><span class="opacity-50 text-xs">Member</span>
+        </div>
+        <button class="btn btn-sm btn-outline btn-primary mt-1 w-full"><i class="bi bi-plus-lg"></i> Invite teammate</button>
+      </div>
     </div>
   </div>
-
-  <style>
-    .embed-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-    }
-
-    .embed-container iframe,
-    .embed-container object,
-    .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  <div class='embed-container'><iframe src='https://www.youtube.com/embed//3GRfLO-u5WY' frameborder='0' allowfullscreen></iframe></div>
-
-</div>
+</section>

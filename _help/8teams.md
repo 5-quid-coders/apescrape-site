@@ -1,47 +1,35 @@
 ---
-title: Teams
+title: Workspaces
 layout: help_article
 ---
 
-# Teams
+# Workspaces
 
-## What are Teams?
-In ApeScrape, a **'Team'** is a group of people who can view, create, edit, and run the name Workflows, Criteria and Data Sources.
+## What is a Workspace?
+In ApeScrape, a **Workspace** is a shared home for your work. Everyone in a Workspace can view, create, edit and run the same **Collections**, **Queries** and **Sources**, and usage is tracked per Workspace.
 
-## Team Roles
-A Team is formed of two roles:
-- **Admin**: An Admin can change the roles of other members of a Team, and remove Team members
-- **Member**: A member cannot change the roles of other members of a Team
+## Create a New Workspace
+To create a Workspace, go to your home page and click **New Workspace** (or **Create your first workspace** if you don't have one yet). Give it a name and click create.
 
-## Create a New Team
-To **create a new Team**, navigate to the 'Teams' page. This can be done by clicking the 'Teams' button on the sidebar or by clicking on [this link](https://dashboard.apescrape.com/teams/)
+Well done, you've created a new Workspace!
 
-Next click the button labelled 'New Team' and input a name for your new Team.
+## Invite Teammates
+You can invite others to collaborate with you.
 
-Finally, click the button labelled 'Create'.
+1. Open your Workspace and go to the **Team** page.
+2. Click **Invite your team**.
+3. Enter the email address of the person you want to invite and click **Send Invitation**.
 
-Well done! You have created a new Team.
+An email is sent to that person with a link to join your Workspace. Until they accept, their invitation appears under **Pending Invitations**, where you can **Revoke** it if needed.
 
-## Invite New Team Members
-You can also **invite new Team members** to your Team so you can collaborate together. 
+## Remove Members
+To remove someone, open the **Team** page, find their email in the members list, and click **Remove** next to it. They'll immediately lose access to the Workspace and everything in it.
 
-To do this, go to the ['Teams page'](https://dashboard.apescrape.com/teams/) and press the 'Select' button next to the Team you wish to invite a new member to. 
+## Track Usage
+Each Workspace has its own **Usage** page, where you can see how many pages have been crawled and how much data has been extracted over time, by hour, day or month.
 
-At the top left of this page, there is an input box with a button next to it labelled 'Invite'. Type the Email Address of the person you wish to invite, then click 'Invite' and an Email will be sent to this person inviting them to join your Team.
+## Delete a Workspace
+To delete a Workspace, open it and choose the delete option. ApeScrape will ask you to confirm.
 
-## Remove Team Members
-If you wish to **remove a member from a Team**, go to the ['Teams page'](https://dashboard.apescrape.com/teams/) and press the 'Select' button next to the Team you wish to remove a member from. 
-
-On this page, find the Email Address of the person you wish to remove, and click the button labelled 'Remove' to the right of this persons Email.
-
-This person will then be removed from the Team and will no longer be able to access the Criteria, Workflows or Data Sources created by this Team.
-
-## Delete a Team
-If you wish to delete a Team, go to the ['Teams page'](https://dashboard.apescrape.com/teams/) and press the 'Select' button next to the Team you wish to delete.
-
-At the top of this page, there is a red button labelled 'Delete'. Click this to delete the Team.
-
-ApeScrape will then confirm that you wish to delete the selected Team. Click 'Ok' to Confirm.
-
-**Warning**  
-**Once you delete a Team, it cannot be reversed and all Workflows, Criteria and Data Sources created will be permanently deleted, along with any data ApeScrape has collected.**
+> **Warning**
+> Deleting a Workspace cannot be undone. All of its Collections, Queries, Sources and collected records are permanently removed.

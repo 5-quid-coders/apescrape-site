@@ -1,18 +1,22 @@
 ---
-title: 5. Exporting Your Data
+title: 5. Viewing Your Data
 layout: help_article
 ---
 
-# Exporting Your Data
+# Viewing Your Data
 
-ApeScrape includes a function to allow you to **export** your data as an Excel (.xlsx) file. To do this, navigate to the Workflow Run View page, where you are able to see all the data ApeScrape has found for you. 
+Once a **Run** finishes, ApeScrape organises everything it found into clean, structured **records**.
 
-From here, press the button labeled **'Export Data'**, and click **'New Export'**. This is shown in the image below:
+To see them, open the **Run** you started. Each Query in your Collection gets its own table of **combined records**, with a column for every field in your schema and a count of how many records were found.
 
-![Image showing the exact location of the export button](/assets/Export_button_image.jpg)
+The records table is:
 
-From here, an Excel file will begin compiling with your collected data. This may take some time depending on the amount of data you have collected. But don't worry, ApeScrape will send you a handy email when your data is ready to download!
+- **Sortable**: click a column header to sort by that field.
+- **Paginated**: browse large result sets a page at a time.
+- **Deduplicated**: records that share your deduplication keys are already merged into a single row.
 
-Just press the Export button again, and this time click on the specific Export you want to download.
+## Re-running deduplication
 
-Congratulations, you now have your data in an Excel file!
+If you change your deduplication keys after a Run, open the Run and use **Re-Deduplicate Run** under **Developer Options** to merge your records again with the updated keys, with no need to crawl the sites a second time.
+
+Congratulations, your data is ready to explore!

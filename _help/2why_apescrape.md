@@ -3,25 +3,23 @@ title: Why ApeScrape?
 layout: help_article
 ---
 
-# Why Choose ApeScrape?  
+# Why Choose ApeScrape?
 
-**ApeScrape** makes web data collection a breeze by transforming unstructured information into **structured, easy-to-use spreadsheets**—formatted exactly to your specifications.  
+**ApeScrape** makes web data collection a breeze by transforming unstructured information into **structured, easy-to-use records**, formatted exactly to your specifications.
 
-## From Chaos to Clarity  
-Our AI-powered scraper extracts only the data that matters, converting messy, unstructured web pages into **clean, structured datasets**, ensuring your data is ready for analysis.  
+## From Chaos to Clarity
+Our AI-powered scraper extracts only the data that matters, converting messy web pages into **clean, structured records**, ready for you to explore, sort and analyse.
 
-## Minimal Effort, Maximum Results  
-Just provide the **root URLs** of the websites you want to scrape, and we handle the rest—no coding or complex configurations required.  
+## Minimal Effort, Maximum Results
+Just add the **source URLs** of the sites you want to collect from and describe the fields you want, and ApeScrape crawls the pages and does the rest. No coding or complex configuration required.
 
-## Hyper-Specific Data Extraction  
-Thanks to **advanced AI**, ApeScrape lets you extract precisely the information you need, no matter how niche or detailed your requirements.  
+## Hyper-Specific Data Extraction
+Thanks to **advanced AI**, ApeScrape lets you extract precisely the information you need, no matter how niche or detailed your requirements.
 
-## Multiple Spreadsheet Formats  
-Download your data in **CSV, XLSX, and other popular formats**, making it easy to fit your needs.  
+## Automatic Deduplication
+Choose deduplication keys and ApeScrape merges duplicate records into a single combined record for you, so your results stay clean.
 
-## Set It and Forget It  
-No need to wait around while ApeScrape works! You can **focus on other tasks**, and once your data is ready, you'll receive a **confirmation email** so you can download it instantly.  
+## Set It and Forget It
+Give a Collection a **schedule** and ApeScrape re-runs it automatically, keeping your data fresh while you focus on other things.
 
-Let **ApeScrape** do the heavy lifting—so you can **analyze, strategize, and grow with confidence.**  
-
-blockchain
+Let **ApeScrape** do the heavy lifting, so you can **analyse, strategize, and grow with confidence.**

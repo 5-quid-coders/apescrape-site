@@ -1,15 +1,17 @@
 ---
-title: 1. Workflows
+title: 1. Collections
 layout: help_article
 ---
 
-# Workflows
-Workflows represent your web scraping set up, consisting of two key components: [**Criteria**](./4criteria.html) and [**Data Sources**](./5datasource.html). 
+# Collections
+A **Collection** represents a web scraping set up. It brings together two key components: [**Queries**](./4criteria.html) and [**Sources**](./5datasource.html).
 
-**Criteria** indicate the type of data you want to collect and **Data Sources** are a list of all the websites you want to collect data from. 
+**Queries** describe the data you want to collect, and **Sources** are the websites you want to collect it from.
 
-Workflows can be run as many times as you like to ensure you always have up to date information, and can also be paused to ensure data is only collected when you want it to. You can also view the time that each Workflow run was started, so you know when your data was collected. 
+Each time you want data, you start a **Run** on a Collection. You can run a Collection as many times as you like to keep your information up to date, and every Run records when it was started so you always know how fresh your data is.
 
-Workflows can also be edited to allow you to change your mind after setup!
+You can also give a Collection a **schedule**, so ApeScrape re-runs it automatically (daily, weekly, or whenever you like) and pause the schedule at any time.
 
-Finally, data collected during a Workflow can be exported as an Excel (.xlsx) file, allowing you to analyse your data in the most comfortable way for you. More information on Exporting is available [here.](./7exporting)
+Collections can be edited after setup, so you can always change your mind.
+
+Finally, the records collected during a Run are organised into clean, structured tables you can sort and explore. More information on viewing your data is available [here.](./7exporting)

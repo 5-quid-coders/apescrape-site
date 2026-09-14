@@ -1,48 +1,31 @@
 ---
-title: 3. Datasources
+title: 3. Sources
 layout: help_article
 ---
 
-# Datasources
-The **Datasource** is the second component of your **Workflow**. This is where you can list all the websites that you want to collect data from.
+# Sources
+A **Source** is the second component of your **Collection**. Each Source is a website you want to collect data from.
 
-For each website you want to include, simply fill in the **Name** field with the name of the website and the **URL** field with the website address.
+For each Source you add, you just need:
+
+- **Name**: a label for the website.
+- **URL**: the address of the site you want to collect from.
+
+ApeScrape reads through the site for you, so you don't need to list individual pages.
 
 ## Scenario:
-Looking for information about **restaurants in Edinburgh** from a set of tourist websites.
+Looking for information about **restaurants in Edinburgh** from a tourist website.
 
-### Datasources:
+### Source:
 
-- **Name:**  
-  Food in Edinburg
-  **URL:**  
-  https://www.foodinedinburg.com
-
-- **Name:**  
-  Foodie Traveller   
-  **URL:**  
+- **Name:**
+  Foodie Traveller
+  **URL:**
   https://foodytraveller.com
 
-- **Name:**  
-  Food4Fun   
-  **URL:**  
-  https://www.food4fun.com
+## Adding more than one Source
 
+You can add as many Sources as you like to a Collection. ApeScrape will collect data from all of them and combine the results into one clean set of records.
 
-## When to Use Specific Page URLs vs Root URLs?
-
-- **Specific page URLs** should be used **only** if you would like to start crawling a website from a specific point rather than just the home page.
-- **Root URLs** should be used in **every other circumstance**
-
-> **Helpful Tip**  
-> The root URL of a website starts with `https://` and includes everything before the next `/`.  
-> For example, ApeScrape’s root URL is:  
-> `https://apescrape.com/`
-
-
-To quickly add Datasources through **CSV import**, choose the **Import** button located on the Datasource Creation Screen.
-
-![Image showing the exact location of the import CSV button](/assets/import_csv_button.png)
-
-> **Helpful Tip**  
-> Once your Datasource is created, you can select it again when making new Workflows to get up and running even quicker—perfect if you're collecting from the same websites repeatedly.
+> **Helpful Tip**
+> Start with the site's home page address (for example `https://foodytraveller.com`) and ApeScrape will explore the rest of the site from there.
